@@ -35,7 +35,7 @@ function Prop() {
 
 Prop.prototype = {
     _init: function() {
-        DBus.session.proxifyObject(this, 'org.mpris.MediaPlayer2.rhythmbox', '/org/mpris/MediaPlayer2', this);
+        DBus.session.proxifyObject(this, 'org.mpris.MediaPlayer2.banshee', '/org/mpris/MediaPlayer2', this);
     }
 }
 DBus.proxifyPrototype(Prop.prototype, PropIFace)
@@ -85,7 +85,7 @@ function MediaServer2Player() {
 }
 MediaServer2Player.prototype = {
     _init: function() {
-        DBus.session.proxifyObject(this, 'org.mpris.MediaPlayer2.rhythmbox', '/org/mpris/MediaPlayer2', this);
+        DBus.session.proxifyObject(this, 'org.mpris.MediaPlayer2.banshee', '/org/mpris/MediaPlayer2', this);
     },
 
  
